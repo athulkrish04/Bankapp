@@ -1,0 +1,27 @@
+<div class="text-white ms-2 p-3">
+    <h1>
+        {{aim}}
+    </h1>
+</div>
+<h2>Login Page</h2><br>    
+    <div class="login">    
+    <form id="login" >    
+        <label><b>Account Number    
+        </b>    
+        </label>    
+        <input type="text" #acno name="acno" id="acid" class="form-control" [placeholder]="data">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" #psw name="Pass" id="pid" placeholder="Password">    
+        <br><br>    
+        <button type="submit" (click)="login(acno,psw)" class="btn btn-sucess">Login </button>     
+        <br><br>  
+        <a href="">Sign Up</a>  
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        Forgot <a href="#">Password</a>    
+    </form>     
+</div>    
